@@ -32,8 +32,9 @@ public class GestorAtencionHilo extends Thread {
 	}
 
 	private void atenderCliente(Integer tiempo) {
-		System.out.println("Atendiendo a cliente: " + tiempo);
-
+//		System.out.println("Atendiendo a cliente: " + tiempo);
+		System.out.println("Hilo:" + Thread.currentThread().getName());
+		
 		try {
 			TimeUnit.SECONDS.sleep(tiempo);
 		} catch (InterruptedException e) {
