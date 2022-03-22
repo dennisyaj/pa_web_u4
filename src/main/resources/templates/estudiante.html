@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+
+
+
+<head>
+</head>
+
+
+
+<body>
+	<table>
+		<!--Fila del ID-->
+		<tr>
+			<td th:text="'ID:'" />
+			<td th:text="${estu.id}" />
+		</tr>
+		<!--Fila del Nombre-->
+		<tr>
+			<td th:text="'Nombre:'" />
+			<td th:text="${estu.nombre}" />
+		</tr>
+		<!--Fila del Apellido-->
+		<tr>
+			<td th:text="'Apellido:'" />
+			<td th:text="${estu.apellido}" />
+		</tr>
+	</table>
+</body>
+
+
+
+</html>
