@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+</head>
+
+<body>
+	<form th:action="@{/estudiantes/insertar}" th:object="${estudiante}" method="POST">
+		<table>
+			<tr>
+				<td>
+					<label>Nombre:</label>
+				</td>
+
+				<td>
+					<input type="text" id="nombre" th:field="*{nombre}">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label>Apellido:</label>
+				</td>
+
+				<td>
+					<input type="text" id="apellido" th:field="*{apellido}>
+				</td>
+			</tr>
+		</table>
+		<input type=" submit" value="Guardar">
+	</form>
+</body>
+
+</html>
