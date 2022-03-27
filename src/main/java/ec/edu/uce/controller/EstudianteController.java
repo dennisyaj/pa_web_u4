@@ -56,6 +56,7 @@ public class EstudianteController {
 	public String insertarEstudiante(Estudiante estudiante, BindingResult result, Model modelo,
 			RedirectAttributes redirectAttributes) {
 		this.iEstudianteService.insertarEstudinte(estudiante);
+		redirectAttributes.addFlashAttribute("mensaje", "Estudiante guadardo");
 		// posibles paginas repuestas para despues de insertar
 		return "redirect:/estudiantes/todos";
 	}
@@ -78,6 +79,7 @@ public class EstudianteController {
 //		List<Estudiante> listaEstudiantes = this.iEstudianteService.buscarTodos();
 //		modelo.addAttribute("listEstudiantes", listaEstudiantes);
 //
+//		return "index";
 		return "redirect:/estudiantes/todos";
 
 	}
