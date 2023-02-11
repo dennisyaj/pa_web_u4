@@ -29,4 +29,7 @@ public class CajeroHilo {
 	public void setClientes(List<Integer> clientes) {
 		this.clientes = clientes;
 	}
+	public void nada(){
+		
+	}
 }
